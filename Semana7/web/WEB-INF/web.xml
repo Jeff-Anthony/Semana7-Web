@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SLista_empleados</servlet-name>
+        <servlet-class>controlador.SLista_empleados</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SData_empleado</servlet-name>
+        <servlet-class>controlador.SData_empleado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SUpdate_empleado</servlet-name>
+        <servlet-class>controlador.SUpdate_empleado</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SLista_empleados</servlet-name>
+        <url-pattern>/SLista_empleados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SData_empleado</servlet-name>
+        <url-pattern>/SData_empleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SUpdate_empleado</servlet-name>
+        <url-pattern>/SUpdate_empleado</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
